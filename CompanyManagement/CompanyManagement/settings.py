@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dg+s$hz80_%xzd+00x9h-xkc%u9oyuabg=i^)v7lqd8g#@6_@n'
+SECRET_KEY = 'django-insecure-857q4ue^_cypu%2u&2i!v2oum6mr4e43&w=!+b+%am=q$adqo^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms'
+    'crispy_forms',
+    'UserModule'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = 'cwzkmcqhknkrnupx'
+
+AUTH_USER_MODEL = 'UserModule.User'
